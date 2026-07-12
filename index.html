@@ -488,8 +488,8 @@ footer .legal{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;col
 .lab-hint-grip circle{fill:var(--bordeaux)}
 .lab-hint-grip path{fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .chart.armed .lab-reveal{clip-path:inset(0 100% 0 0)}
-.chart.armed.play .lab-reveal{clip-path:inset(0 0 0 0);transition:clip-path 6s cubic-bezier(.45,0,.15,1)}
-.chart.armed.play .playhead{animation:labScan 6s cubic-bezier(.45,0,.15,1) forwards}
+.chart.armed.play .lab-reveal{clip-path:inset(0 0 0 0);transition:clip-path 6s cubic-bezier(.65,0,.35,1)}
+.chart.armed.play .playhead{animation:labScan 6s cubic-bezier(.65,0,.35,1) forwards}
 @keyframes labScan{0%{transform:translateX(0);opacity:0}7%{opacity:.85}100%{transform:translateX(590px);opacity:.85}}
 .lab-replay{display:none;align-items:center;gap:7px;margin-top:20px;padding:8px 17px;font-family:var(--body);font-size:12px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--pine);background:transparent;border:1px solid rgba(47,48,43,.28);border-radius:999px;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
 .lab-replay:hover{background:var(--pine);color:var(--cream);border-color:var(--pine)}
@@ -500,18 +500,18 @@ footer .legal{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;col
 /* === SwitZero efface le sucre traditionnel : sucre présent au départ, puis effacé par le balayage (synchronisé) === */
 .sugar-curve{clip-path:inset(0 0 0 0)}
 .chart.armed .sugar-curve{clip-path:inset(0 0 0 0)}
-.chart.armed.play .sugar-curve{clip-path:inset(0 0 0 100%);transition:clip-path 6s cubic-bezier(.45,0,.15,1)}
+.chart.armed.play .sugar-curve{clip-path:inset(0 0 0 100%);transition:clip-path 6s cubic-bezier(.65,0,.35,1)}
 .chart.armed .legend .lg-sugar{opacity:1}
-.chart.armed.play .legend .lg-sugar{opacity:.3;transition:opacity 6s cubic-bezier(.45,0,.15,1)}
+.chart.armed.play .legend .lg-sugar{opacity:.3;transition:opacity 6s cubic-bezier(.65,0,.35,1)}
 .chart.armed .legend .lg-swit{opacity:.3}
-.chart.armed.play .legend .lg-swit{opacity:1;transition:opacity 6s cubic-bezier(.45,0,.15,1)}
+.chart.armed.play .legend .lg-swit{opacity:1;transition:opacity 6s cubic-bezier(.65,0,.35,1)}
 .legend .lg-sugar,.legend .lg-swit{will-change:opacity}
-.chart.armed.play .legend .lg-aroma{font-weight:500;transition:font-weight 6s cubic-bezier(.45,0,.15,1)}
-.chart.armed.play .legend .lg-aroma .sw{border-top-width:4px;transition:border-top-width 6s cubic-bezier(.45,0,.15,1)}
+.chart.armed.play .legend .lg-aroma{transform:scale(1.07);transition:transform 6s cubic-bezier(.65,0,.35,1)}
+.chart.armed.play .legend .lg-aroma .sw{border-top-width:4px;transition:border-top-width 6s cubic-bezier(.65,0,.35,1)}
 .aroma-boost{-webkit-mask-image:linear-gradient(90deg,#000,#000 46%,transparent 54%,transparent);mask-image:linear-gradient(90deg,#000,#000 46%,transparent 54%,transparent);-webkit-mask-size:200% 100%;mask-size:200% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:100% 0;mask-position:100% 0}
-.chart.armed.play .aroma-boost{-webkit-mask-position:0% 0;mask-position:0% 0;transition:-webkit-mask-position 6s cubic-bezier(.45,0,.15,1),mask-position 6s cubic-bezier(.45,0,.15,1)}
+.chart.armed.play .aroma-boost{-webkit-mask-position:0% 0;mask-position:0% 0;transition:-webkit-mask-position 6s cubic-bezier(.65,0,.35,1),mask-position 6s cubic-bezier(.65,0,.35,1)}
 .chart.armed .sugar-fog{clip-path:inset(0 0 0 0)}
-.chart.armed.play .sugar-fog{clip-path:inset(0 0 0 100%);transition:clip-path 6s cubic-bezier(.45,0,.15,1)}
+.chart.armed.play .sugar-fog{clip-path:inset(0 0 0 100%);transition:clip-path 6s cubic-bezier(.65,0,.35,1)}
 .legend .reg{font-size:.5em;vertical-align:super;letter-spacing:0}
 .lake{position:relative;width:100%;overflow:hidden;line-height:0}
 .lake img{display:block;width:100%;height:clamp(320px,56vw,660px);object-fit:cover;object-position:center}
@@ -572,7 +572,7 @@ footer .legal{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;col
 .sachet-wrap .stick .pocket{height:65%}
 .sachet-wrap .stick .pocket{border-radius:999px}
 .sachet-wrap .stick .active{border-radius:999px}
-.venue{position:relative;width:100%;overflow:hidden;background:var(--pine)}.venue-frame{width:100%;height:clamp(460px,82vh,900px);overflow:hidden}.venue-img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%;transform:scale(1.3);transform-origin:center;opacity:.6;will-change:transform,opacity}@media(max-width:720px){.venue-frame{height:clamp(420px,72vh,720px)}}/* ---------- rythme vertical unifié ---------- */.manifesto,.pillars,.ritual,.lab,.configurator,.maison,.contact{padding-top:clamp(96px,12vw,150px);padding-bottom:clamp(96px,12vw,150px)}.scene img,.lake img{height:clamp(340px,52vw,620px)}.venue-frame{height:clamp(440px,74vh,760px)}@media(max-width:720px){.venue-frame{height:clamp(400px,64vh,620px)}}</style>
+.venue{position:relative;width:100%;overflow:hidden;background:var(--pine)}.venue-frame{width:100%;height:clamp(460px,82vh,900px);overflow:hidden}.venue-img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%;transform:scale(1.3);transform-origin:center;opacity:.6;will-change:transform,opacity}@media(max-width:720px){.venue-frame{height:clamp(420px,72vh,720px)}}/* ---------- rythme vertical unifié ---------- */.manifesto,.pillars,.ritual,.lab,.configurator,.maison,.contact{padding-top:clamp(96px,12vw,150px);padding-bottom:clamp(96px,12vw,150px)}.scene img,.lake img{height:clamp(340px,52vw,620px)}.venue-frame{height:clamp(440px,74vh,760px)}@media(max-width:720px){.venue-frame{height:clamp(400px,64vh,620px)}}.legend .lg-aroma{transform-origin:center;will-change:transform}</style>
 </head>
 <body>
 
@@ -843,6 +843,8 @@ addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40),{passiv
 // retour élastique horizontal : dès qu'on relâche, le défilement revient au centre,
 // sans délai — comme le bord gauche. Déclenché au relâchement du doigt (touchend).
 function hSnapBack(){
+  const vv=window.visualViewport;
+  if(vv && vv.scale>1.001) return; // jamais pendant un zoom (pincement)
   if((window.scrollX||0)>0) window.scrollTo({left:0,top:window.scrollY,behavior:'smooth'});
 }
 addEventListener('touchend',hSnapBack,{passive:true});
@@ -999,6 +1001,7 @@ applyLang('en');
       swSugar=chart.querySelector('.legend .lg-sugar'),
       swSwit=chart.querySelector('.legend .lg-swit'),
       swAromaBar=chart.querySelector('.legend .lg-aroma .sw'),
+      lgAroma=chart.querySelector('.legend .lg-aroma'),
       fog=chart.querySelector('.sugar-fog'),
       aromaBase=chart.querySelector('.aroma-base'),
       aromaBoost=chart.querySelector('.aroma-boost'),
@@ -1008,7 +1011,7 @@ applyLang('en');
   chart.classList.add('armed');
   if(svg) chart.classList.add('scrubbable');
   if(btn) btn.style.display='inline-flex';
-  function clearInline(){ [red,sugar,head,swSugar,swSwit,swAromaBar,fog,aromaBase,aromaBoost].forEach(function(el){ if(el) el.style.cssText=''; }); if(aromaBaseGrad){ aromaBaseGrad.setAttribute('x1','-70'); aromaBaseGrad.setAttribute('x2','70'); } }
+  function clearInline(){ [red,sugar,head,swSugar,swSwit,swAromaBar,lgAroma,fog,aromaBase,aromaBoost].forEach(function(el){ if(el) el.style.cssText=''; }); if(aromaBaseGrad){ aromaBaseGrad.setAttribute('x1','-70'); aromaBaseGrad.setAttribute('x2','70'); } }
   function autoFade(){ var t0=null; function st(ts){ if(scrubbing){ rafFade=null; return; } if(t0===null) t0=ts; var t=(ts-t0)/6000; if(t>1)t=1; var f=t<0.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2; var bf=Math.max(0,Math.min(1,(f-0.22)/0.78)); if(aromaBaseGrad){ aromaBaseGrad.setAttribute('x1',(-70+bf*730).toFixed(1)); aromaBaseGrad.setAttribute('x2',(70+bf*730).toFixed(1)); } rafFade = t<1 ? requestAnimationFrame(st) : null; } rafFade=requestAnimationFrame(st); }
   function play(){ clearInline(); chart.classList.remove('play'); void chart.offsetWidth; setTimeout(function(){ if(!scrubbing){ chart.classList.add('play'); autoFade(); } }, 1300); }
   var scrubbing=false, pendingX=null, rafId=null, rafFade=null, tActive=false, tEngaged=false, tStartX=0;
@@ -1018,6 +1021,7 @@ applyLang('en');
     if(red){ red.style.transition='none'; red.style.clipPath='inset(0 '+((1-f)*100).toFixed(2)+'% 0 0)'; }
     if(sugar){ sugar.style.transition='none'; sugar.style.clipPath='inset(0 0 0 '+(f*100).toFixed(2)+'%)'; }
     if(swAromaBar){ swAromaBar.style.transition='none'; swAromaBar.style.borderTopWidth=(2.5+f*1.5).toFixed(2)+'px'; }
+    if(lgAroma){ lgAroma.style.transition='none'; lgAroma.style.transform='scale('+(1+f*0.07).toFixed(3)+')'; }
     if(fog){ fog.style.transition='none'; fog.style.clipPath='inset(0 0 0 '+(f*100).toFixed(2)+'%)'; }
     if(rafFade){ cancelAnimationFrame(rafFade); rafFade=null; }
     if(aromaBaseGrad){ var _bf=Math.max(0,Math.min(1,(f-0.22)/0.78)); aromaBaseGrad.setAttribute('x1',(-70+_bf*730).toFixed(1)); aromaBaseGrad.setAttribute('x2',(70+_bf*730).toFixed(1)); }
